@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  
+</head>
+
+<body style="background-color: #eee">
+    <section class="gradient-form mt-3" >
+        <div class="container py-2">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-xl-10">
+                    <div class="card rounded-3 text-black">
+                        <div class="row g-0">
+                            <div class="col-lg-4" style="display: flex;flex-direction: column">
+                                <div class="card-body p-md-2 mx-md-4 mb-5" style="margin: auto;">
+
+                                   
+
+                                    <div class="text-center">
+                                        <img src="/img/logo.jpg" style="width: 100%;" alt="logo">
+                                    </div>
+
+
+                                    <div style="display: none;" id="loading" class="text-center">
+                                        <img src="/img/loading.gif" style="width: 25%;margin-top: 30px;">
+                                    </div>
+
+                                    <div id="form">
+                                        <div class="form-outline mb-4">
+                                            <input type="text" id="form-nik" class="form-control"/>
+                                            <label class="form-label" for="form-nik">Masukkan NIK</label>
+                                        </div>
+
+
+                                        <div class="text-center pt-1 mb-5 pb-1">
+                                            <button onclick="submit()"
+                                                class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                                                type="button">Cek NIK</button>
+
+                                        </div>
+                                        </div>
+                                        <div id="resultArea" style="display:none">
+                                            <h5 id="hasil-judul"><i class="fas fa-check"></i> Data Valid</h5>
+                                            <div id="details">
+                                            </div>
+                                            <form class="mt-3 success">
+                                                <div class="mb-3">
+                                                    <input placeholder="Nomor Handphone" type="text" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="file" class="form-control" id="exampleInputPassword1">
+                                                    <p style="font-size: 10px" class="mt-1 text-end m-2 mb-2">Upload Foto</p>
+                                                </div>
+                                               
+                                            </form>
+                                            <button onclick="showForm()" type="button" class="btn btn-secondary mt-4" style="float: left">Input Lagi</button>
+                                            <button type="submit"
+                                            class="btn btn-primary success mt-4" style="float: right">Submit</button>
+                                        </div>
+
+                                        </div>
+                                        </div>
+                            <div id="res" class="col-lg-8 d-flex align-items-center p-3 gradient-custom-2">
+                                <div class="my-4 row border rounded shadow-sm" style="margin: auto;width: 100%;background: white">
+                                    <div class="p-3 col-sm-5 col-md-7" style="background: #f5f5f5;">
+                                      <strong class="d-inline-block mb-4 text-primary">Team Bayu</strong>
+                                      <h5 id="hasil-judul" >Selamat Datang</h5>
+                                      <div id="resultArea" >
+                                        <p class="card-text">Ini adalah portal untuk cek TPS berdasarkan data NIK yang telah terdaftar pada Database KPU Indonesia. Apabila hasil cek NIK tidak benar, maka pemilik dari NIK tersebut disarankan untuk melaporkan kepada pihak terkait untuk dilakukan pembetulan data. 
+                                          </p>
+                                      </div>                                     
+                                    </div>
+                                    <div class="col-sm-5 col-md-5 my-4">
+                                        <img src="/img/bayu.jpg" alt="" style="width: 100%;">
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
